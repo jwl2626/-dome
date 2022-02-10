@@ -1,0 +1,27 @@
+<div class="container" onswipe="toNextPage">
+    <div class="title-container">
+        <text class="title">
+            今日动态
+        </text>
+    </div>
+    <stack class="stack" >
+        <chart class="chart-container" type="bar" options="{{options}}" datasets="{{datasetsStatic}}"/>
+        <chart class="chart-container" type="bar" options="{{options}}" datasets="{{datasets}}"/>
+    </stack>
+    <div class="time-container">
+        <text class="time" for="{{ timeRange }}">
+            {{ $item }}
+        </text>
+    </div>
+    <list class="activities-list">
+        <list-item class="activity" for="{{ activityData }}">
+            <image class="icon" src="/common/images/{{ $item.iconName }}-circle.png"/>
+            <text class="type">
+                {{ $item.text }}
+            </text>
+            <text class="percent">
+                {{ $item.percent }}%
+            </text>
+        </list-item>
+    </list>
+</div>

@@ -1,0 +1,20 @@
+<div class="container" onswipe="toNextPage">
+    <div class="title-container">
+        <text class="title">
+            压力分布
+        </text>
+    </div>
+    <div class="time-container">
+        <text class="time" for="{{ timeRange }}">
+            {{ $item }}
+        </text>
+    </div>
+    <list class="list" >
+        <list-item class="list-item" for="{{maxmin}}">
+            <image class="icon" src="/common/images/{{$item.iconName}}.png"/>
+            <text class="maxmin">
+                {{$item.mValue}}
+            </text>
+        </list-item>
+    </list>
+</div>

@@ -1,0 +1,20 @@
+<div class="container" onswipe="toNextPage">
+    <div class="title-container">
+        <text class="title">
+            压力占比
+        </text>
+    </div>
+    <list class="state-wrapper">
+        <list-item class="state-item" for="{{states}}" >
+            <div class="state-percent" >
+                <text class="state" >
+                    {{$item.state}}
+                </text>
+                <text class="state" >
+                    {{$item.percent}}%
+                </text>
+            </div>
+            <progress class="progress-bar" percent="{{$item.percent}}" style="color: {{$item.color}}" />
+        </list-item>
+    </list>
+</div>

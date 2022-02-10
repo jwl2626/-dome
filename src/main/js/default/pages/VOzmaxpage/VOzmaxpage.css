@@ -1,0 +1,51 @@
+.container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 466px;
+    height: 466px;
+}
+.title-container {
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 70px;
+}
+.title {
+    justify-content: center;
+    align-items: center;
+
+}
+.number-container {
+    width: 320px;
+    height: 220px;
+    justify-content: center;
+    align-items: center;
+}
+.number-icon {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+}
+.unit {
+    width: 200px;
+    height: 50px;
+    color: gray;
+    text-align: center;
+
+}
+.level {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+.progress {
+    width: 466px;
+    height: 466px;
+    stroke-width: 10px;
+    total-angle: 40deg;
+}
+.stack {
+    width: 100%;
+    height: 100%;
+}

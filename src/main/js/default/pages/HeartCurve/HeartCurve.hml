@@ -1,0 +1,27 @@
+<div class="container" onswipe="toNextPage" >
+    <div class="title-container" >
+        <text class="title">
+            心率曲线
+        </text>
+    </div>
+    <chart class="chart" type="line" options="{{options}}" datasets="{{datasets}}" />
+    <list class="list" >
+        <list-item class="list-item" for="{{maxmin}}">
+            <image class="icon" src="/common/images/{{$item.iconName}}.png"/>
+            <text class="maxmin">
+                {{$item.mValue}}
+            </text>
+        </list-item>
+    </list>
+    <div class="average-container">
+        <text class="average">
+            平均
+        </text>
+        <text class="average-number">
+            {{average}}
+        </text>
+        <text class="average" >
+            次/分
+        </text>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<stack class="stack" onswipe="toNextPage">
+    <div class="container">
+        <div class="title-container">
+            <text class="title">
+                最大摄氧量
+            </text>
+        </div>>
+        <div class="number-container">
+            <image if="{{isShow}}" class="number-icon" src="/common/images/number/{{first}}.png"/>
+            <image class="number-icon" src="/common/images/number/{{second}}.png"/>
+        </div>
+        <text class="unit">
+            ml/kg/min
+        </text>
+        <text class="level">
+            {{level}}水平
+        </text>
+    </div>
+
+    <progress class="progress" type="arc" percent="100" for="{{styles}}" style="color:{{$item.color}};start-angle:{{$item.startAngle}};"/>
+
+</stack>

@@ -1,0 +1,13 @@
+<div class="container" onswipe="toNextPage">
+    <div class="title-container">
+        <text class="title">
+            作者：谭日贵
+        </text>
+    </div>
+    <div class="contact-image" >
+        <image src="/common/images/huaweiLogo.png"/>
+    </div>
+    <text>
+        下滑进入：最大摄氧量
+    </text>
+</div>
